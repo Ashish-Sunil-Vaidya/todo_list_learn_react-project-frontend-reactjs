@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --blu:navy;
+}
+
+.App
+{
+  display: grid;
+  width: 100svw;
+  height: 100svh;
+  grid-template-rows: 10% 15% auto;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.heading
+{
+  font-size: 3rem;
+  background-color: whitesmoke;
+}
+
+.add-item
+{
+  background-color: transparent;
+  border: 2px solid var(--blu);
+  color: var(--blu);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+
+.add-item:hover
+{
+  background-color: var(--blu);
+  color: whitesmoke;
+  transition: all 0.2s ease-in-out;
+}
+
+.list
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: decimal;
+}
+
+.item
+{
+  display: grid;
+  width: 90%;
+  grid-template-columns: auto 90% auto;
+  background-color: lightgray;
+  padding: 1%;
+}
+
+.item:nth-child(even)
+{
+  background-color: whitesmoke;
+}
+
+.item-name
+{
+  text-align: left;
+}
+
+.input-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.input-item
+{
+  border: solid var(--blu);
+  width: 50%;
+  height: 5svh;
+}
+
+
+
+
